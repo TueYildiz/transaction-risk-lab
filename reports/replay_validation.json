@@ -1,0 +1,20 @@
+{
+  "scope": "all development splits; test excluded",
+  "rows": 501959,
+  "features_checked": [
+    "hist_count",
+    "hist_valid_amount_count",
+    "hist_mean_amount",
+    "hist_std_amount",
+    "hist_max_amount",
+    "hist_total_amount",
+    "time_since_previous",
+    "amount_to_hist_mean",
+    "amount_minus_hist_mean",
+    "is_new_group"
+  ],
+  "sql_replay_parity": true,
+  "checkpoint_resume_parity": true,
+  "duplicate_retry_noop": true,
+  "seconds": 97.88
+}
