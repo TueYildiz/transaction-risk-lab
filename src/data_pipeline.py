@@ -17,6 +17,9 @@ def load_data():
             "TransactionAmt",
             "ProductCD",
             "isFraud",
+            "card1",
+            "card4",
+            "addr1",
         ],
     )
 

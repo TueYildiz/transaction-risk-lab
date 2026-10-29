@@ -61,3 +61,27 @@ time period.
 - These observations support time-based evaluation but do not establish
   the causes of the changes.
 - The final partial week is excluded from full-week comparisons.
+
+
+## M3 — Historical Feature Engineering
+
+Implemented 10 historical features using DuckDB window functions.
+
+- Proxy groups use card1, card4, and addr1.
+- Only strictly earlier transactions contribute to history.
+- Same-time transactions are excluded.
+- Missing group keys produce missing historical features.
+- Historical features do not use fraud labels.
+
+Validation includes same-time exclusion, future-amount invariance,
+input row-order invariance, and Parquet round-trip equality.
+
+Run feature generation:
+
+    python src/features.py
+
+Run tests:
+
+    python -m pytest tests/test_features.py -v
+
+Output: data/processed/history_features.parquet
