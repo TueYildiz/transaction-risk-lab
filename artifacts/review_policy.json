@@ -1,0 +1,12 @@
+{
+  "model_name": "lightgbm_history",
+  "model_bundle_sha256": "0356ca1e3ef666bacf4362afa89f6a4b741c1f15d2756943758ac0fe011a59a6",
+  "score_type": "raw",
+  "selection_method": "threshold_then_batch_capacity",
+  "threshold": 0.3842660325655458,
+  "max_review_rate": 0.01,
+  "fdr_target": 0.5,
+  "tie_breaker": "TransactionID ascending",
+  "development_split": "policy",
+  "fdr_guaranteed": false
+}

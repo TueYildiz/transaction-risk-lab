@@ -4,7 +4,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 import duckdb
-from baseline import evaluate_selection
+from src.baseline import evaluate_selection
 import pandas as pd
 from sklearn.impute import SimpleImputer
 from lightgbm import LGBMClassifier

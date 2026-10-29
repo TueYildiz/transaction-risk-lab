@@ -1,8 +1,8 @@
 import pandas as pd
 from sklearn.metrics import average_precision_score, roc_auc_score
 
-from baseline import evaluate_selection
-from modeling import (
+from src.baseline import evaluate_selection
+from src.modeling import (
     PROJECT_ROOT,
     CATEGORICAL_FEATURES,
     HISTORY_FEATURES,

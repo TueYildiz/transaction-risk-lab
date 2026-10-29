@@ -6,6 +6,11 @@
 | ProductCD | product code | a input feature, |
 
 
+python -m src.modeling
+python -m src.backtesting
+python -m src.calibration
+python -m src.policy
+
 # Transaction Risk Lab
 
 ## Project Objective

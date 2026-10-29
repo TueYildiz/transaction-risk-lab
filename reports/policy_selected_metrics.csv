@@ -1,0 +1,2 @@
+selected_transactions,total_fraud,true_positives,false_positives,false_negatives,precision,recall,fdr,review_rate
+71,2017,37,34,1980,0.5211267605633803,0.01834407535944472,0.4788732394366197,0.0012022894300132082
