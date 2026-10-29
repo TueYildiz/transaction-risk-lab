@@ -1,0 +1,2 @@
+method,selected_transactions,total_fraud,true_positives,false_positives,false_negatives,precision,recall,fdr,review_rate
+amount_top_1pct,590,2125,22,568,2103,0.03728813559322034,0.010352941176470589,0.9627118644067797,0.009990855826870322

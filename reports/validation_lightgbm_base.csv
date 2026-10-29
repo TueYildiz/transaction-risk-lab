@@ -1,0 +1,2 @@
+model,split,feature_count,selected_transactions,total_fraud,true_positives,false_positives,false_negatives,precision,recall,fdr,review_rate
+lightgbm_base,validation,2,590,2125,142,448,1983,0.24067796610169492,0.06682352941176471,0.7593220338983051,0.009990855826870322
