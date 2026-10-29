@@ -1,0 +1,23 @@
+{
+  "time_column": "TransactionDT",
+  "split_names": [
+    "train",
+    "validation",
+    "calibration",
+    "policy",
+    "test"
+  ],
+  "quantiles": [
+    0.55,
+    0.65,
+    0.75,
+    0.85
+  ],
+  "cutoffs": [
+    8022309.6,
+    9614666.750000004,
+    11246620.0,
+    13151845.999999998
+  ],
+  "right_inclusive": true
+}

@@ -1,4 +1,3 @@
-## İlk veri sözlüğü
 
 | TransactionID | unique transaction identifier | Used to join the transaction and identity tables.|
 | TransactionDT | Elapsed time from a reference point, rather than a calendar date| |
@@ -34,3 +33,31 @@ time period.
 - Applied a one-to-one LEFT JOIN without changing the transaction count.
 - Identity coverage is approximately 24.4%.
 
+
+### Product-level findings
+
+- Product C has the highest training fraud rate: 10.71%.
+- Product W has the largest fraud count: 4,610, despite a lower fraud rate of 2.03%.
+- Review prioritization should consider both risk and transaction volume.
+- These findings describe the training period and require validation on later periods.
+
+
+### Identity coverage and product mix
+
+- Identity coverage varies substantially by ProductCD in the training period.
+- No Product W transactions have matching identity records.
+- Within Product C, fraud rates are 6.07% without identity records and
+  11.31% with identity records.
+- Missing-identity groups for H, R, and S are too small for firm conclusions.
+- These associations do not establish causation.
+
+
+### Temporal findings
+
+- Weekly fraud rates vary within the training period.
+- Between relative weeks 3 and 4, fraud rates increase within products
+  C, H, R, and S, while the rate for W decreases slightly.
+- Both product mix and within-product fraud rates vary over time.
+- These observations support time-based evaluation but do not establish
+  the causes of the changes.
+- The final partial week is excluded from full-week comparisons.
