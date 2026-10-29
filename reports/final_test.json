@@ -1,0 +1,34 @@
+{
+  "model_name": "lightgbm_history",
+  "policy": {
+    "model_name": "lightgbm_history",
+    "model_bundle_sha256": "0356ca1e3ef666bacf4362afa89f6a4b741c1f15d2756943758ac0fe011a59a6",
+    "score_type": "raw",
+    "selection_method": "threshold_then_batch_capacity",
+    "threshold": 0.3842660325655458,
+    "max_review_rate": 0.01,
+    "fdr_target": 0.5,
+    "tie_breaker": "TransactionID ascending",
+    "development_split": "policy",
+    "fdr_guaranteed": false
+  },
+  "test_rows": 88581,
+  "probability_metrics": {
+    "average_precision": 0.09653655288531499,
+    "roc_auc": 0.7635702282618604,
+    "brier_score": 0.033695911426712716,
+    "log_loss": 0.13846183002627171
+  },
+  "decision_metrics": {
+    "selected_transactions": 535,
+    "total_fraud": 3083,
+    "true_positives": 40,
+    "false_positives": 495,
+    "false_negatives": 3043,
+    "precision": 0.07476635514018691,
+    "recall": 0.012974375608173857,
+    "fdr": 0.9252336448598131,
+    "review_rate": 0.0060396699066391215
+  },
+  "fdr_target_met_on_test": false
+}
